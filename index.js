@@ -1,6 +1,27 @@
-var http = require('http');
-http.createServer(function handler(req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World\n');
-}).listen(1337, '127.0.0.1');
-console.log('Server running at http://127.0.0.1:1337/');
+// jshint esversion: 6
+
+/**
+ * http://usejsdoc.org/
+ */
+
+'use strict';
+
+const config = require('./config');
+const httpProxy	= require('@rankwave/nodejs-http-proxy');
+
+if ( process.argv.length < 3 )
+{
+	console.log(`USAGE: ${process.argv[0]} ${process.argv[1]} (server|client)`);
+	process.exit(-1);
+}
+
+var appType = process.argv[2];
+
+if ( appType === 'server' )
+{
+	httpProxy.startServer(config.serverOptions);
+}
+else if ( appType === 'worker' )
+{
+	httpProxy.startWorker(config.workerOptions);
+}

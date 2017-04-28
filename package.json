@@ -1,0 +1,28 @@
+{
+  "name": "@rankwave/elastic-http-proxy",
+  "version": "0.1.0",
+  "description": "Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)\r  ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RANKWAVE/elastic-http-proxy.git"
+  },
+  "keywords": [
+    "http",
+    "proxy"
+  ],
+  "author": "Dongmoon Lim <'dmlim@rankwave.com'> ('http://www.rankwave.net')",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RANKWAVE/elastic-http-proxy/issues"
+  },
+  "homepage": "https://github.com/RANKWAVE/elastic-http-proxy#readme",
+  "dependencies": {
+	  "@rankwave/nodejs-util": "*",
+	  "@rankwave/nodejs-text-net": "*",
+	  "@rankwave/nodejs-http-proxy": "*"
+  }
+}
