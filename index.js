@@ -7,7 +7,7 @@
 'use strict';
 
 const config = require('./config');
-const httpProxy	= require('@rankwave/nodejs-http-proxy');
+const httpProxy	= require('@dongmuni/nodejs-http-proxy');
 
 if ( process.argv.length < 3 )
 {
